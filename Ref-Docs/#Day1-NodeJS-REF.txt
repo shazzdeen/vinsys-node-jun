@@ -1,0 +1,222 @@
+VSCode
+
+Brackets
+Nodepad++
+TextPad
+Sublime
+
+WebStorm	<---commercial
+
+
+
+Frontend applications
+
+	- HTML
+		= "What" contents you want to place on your webpage	
+		= to define the 'structure' of webpage
+	- CSS
+		= "How" the content should appear on the webpage
+		= to define 'style rules' for your webpage
+
+	- JavaScript / ES5
+
+		= scripting language
+		= to 'provide functionalities' on your webpage
+
+
+		= introduced in 1997
+		= in 1997, it was submitted to ECMA for standardization 
+		= since then, ECMA publishes 'spacifications' periodically
+		= these 'specifications' are implemented by diff browser, 
+		= the implemenation of these specifications is called 'ECMAScript'
+
+		= it is an interpreted language
+		= javascript code executes only inside the browser
+		= every browser have their own 'javascript engine' which is 					responsible to execute the JS Code
+
+			chrome	= V8
+			firefox	= Spidermonkey
+			edge/IE = Chakra
+			safari	= JavascriptCore
+
+
+			- DOM manipulation
+			- Event handling
+			- form validation
+			- business logic
+
+	- ES1 / ECMAScript 1 = 1997
+	- ES2 / ECMAScript 2 = 1998
+	- ES3 / ECMAScript 3 = 1999
+	- ES5 / ECMAScript 5 = 2009
+
+
+	- ES6 / ECMAScript 2015 = 2015 / JavaScript 2.0 / Modern JavaScript
+		=>var, let, const keyword
+		=>Arrow functions
+		=>Classes & objects
+		=>Module System
+		=>Generators
+		=>Promise
+		=>Async/Await
+		=>many more...
+		
+	- JQuery
+		= it is a JS library
+		= it simplifies javascript tasks
+		= open source / cross browser / light weight / fast...
+
+	- Bootstrap / SemanticUI / Foundation
+		= html+css+jquery library
+		= create responsive webpages
+
+	- ExtJS / React / Angular / Vue / Ember etc...
+		= framworks for web app development
+
+	- ES6 Tools
+		1. Transpiler tools
+			i.e. babel
+
+		2. Bundler
+			i.e. webpack
+
+	
+	Language		Library			Frameworks
+
+	  |			   |			 |
+	provide			Simplify		Standardize
+	programming		tasks			the process
+	capabilities
+
+
+
+Backend applications
+
+	- Java
+	- Python
+	- .net
+	- PHP
+
+
+	- NodeJS
+
+===================================================================
+
+
+	=> var, let & const keyword
+
+
+		- var keyword
+			- global / function scoped variable
+			- canbe redeclared
+
+		- let keyword
+			- block / function scoped variables
+			- cannot be redeclared
+
+		- const keyword
+			- block / function scoped variables
+			- cannot be redeclared	
+			- cannot be reassigned
+
+
+	=> Arrow Functions
+	-------------------------
+		-> more abbreviated way of creating function
+
+
+		cosnt sayHi = function(name){
+		    console.log('hello ' + name)
+		}
+	
+
+		cosnt sayHi = (name) => {
+		    console.log('hello ' + name)
+		}
+
+
+		cosnt sayHi = (name) => console.log('hello ' + name)
+		
+
+		cosnt sayHi = name => console.log('hello ' + name)
+
+=========================================================================
+
+NodeJS
+=============
+
+	-> node is runtime environment for executing javascript code outside the 			browser	
+	-> create backend services/api
+	-> Node is ideal for building highly scalable, data-intensive, real-time 			apps
+
+Node Architecture
+---------------------
+	-> runtime environment
+		=> browser = > JS Engine
+			ie. chrome = VS
+			    firefox = spiderMonkey
+		=> Ryan Dahl
+			- took Google's V8 engine
+			- embedded V8 engine into a C++ program, which is called as 				Node
+		=> Node is a program that includes V8 js engine + some additional 				modules i.e. fs / http / events / etc.
+
+Why Node
+---------------------
+	- easy to get started
+	- good for building superfast, highly scalable services
+	- it is used in production by large companies i.e paypal, uber, walmart, 			etc.
+	- javascript everywhere
+	- cleaner, consise, consistent code base
+	- largest ecosystem of open source libraries
+
+How Node works
+-------------------------
+	-> 'non-blocking' / asynchronus nature
+	-> uses single thread to handle requests
+	-> when a request arrives, the single thread is used to handle that 		request,
+
+		i.e. we make a request to fetch data from a db, so the thread will hand over this request to db, while db is preparing the results, the thread donesn't wait, it will serve other requests...but whenever the db prepares the resutls, it will put a message into "EventQueue"
+
+	-> Node continuesouly monitors the "EventQueue" in the background, whenever it finds an event in the queue, it takes it out and processes it.
+
+
+
+	- callback
+	- promises
+	- async/await
+
+course agenda
+--------------------------
+	- global objects
+	- Node Module System
+		fs/http/path/os module...
+	- NPM / node package manager
+	- Restful api
+	- Restful api using expressjs
+	- fs module
+	- http module
+	- os module
+	- path module
+	- storing data in db i.e. mongodb / mysql
+	- authentication / authorization etc.
+
+
+
+	=> global objects in Node
+	--------------------------------
+	These objects are available in all modules. The following variables may appear to be global but are not. They exist only in the scope of modules, see the module system documentation:
+
+	__dirname
+	__filename
+	exports
+	module
+	require()
+
+
+
+
+
+
+
+
+
