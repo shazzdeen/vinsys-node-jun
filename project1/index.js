@@ -6,6 +6,6 @@ const myEventEmitter = new EventEmiiter();
 myEventEmitter.on('message', ()=>{
     console.log('message event is emitted....')
 })
-
+                                                           
 //raise/emit an event
-myEventEmitter.emit('message')
+m                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           yEventEmitter.emit('message')
